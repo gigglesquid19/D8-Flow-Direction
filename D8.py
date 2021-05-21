@@ -118,10 +118,10 @@ with open('snowslope3.csv', 'r') as csv_file:
                 D8framework4.update(l, k, elev_copy, directcode)
                 k+=1
                 
-                # Loop through the rows and values in the matrix and log2 + 1 not 0
+                # Loop through the rows and values in the matrix and log2 + 1
                 list_to_plot = []
                 for inner_list in elev_copy:
-                    list_to_plot.append([math.log(x, 2) if x else 0 for x in inner_list])
+                    list_to_plot.append([math.log(x, 2) for x in inner_list])
                 # Display the flow direction dataset as an filled contour image
                 fig = pyplot.figure(figsize = (12, 8))
                 ax = fig.add_subplot(111)
