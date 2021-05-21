@@ -40,7 +40,9 @@ Functions
 The program includes x3 functions which can be found in the D8framework.py script. The functions include: Whichpix, Flowdirection and Update.
 Whichpix -        Takes in the values of l and k and elev_copy dataset, along with list of neighboring pixels with values. Loops through the pixellist and finds the and                         calculates a droplist of the differences between neighboring pixel elevations and original pixel elevation. Next, finds the lowest drop value, the 
                   elevdeduct and notes the pixelid, returning both.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Flow Direction -  Takes in the value of l and k and the elev_copy dataset, along with th elededuct, pixid returned from whichpix function and the diagonal boolean and                           pixellist. Depending on the pixelid and boolean, the function calc whether pixel is orthogonal or diagonal from original pixel and uses formula to calculate                   the max_drop, updating the pixel. It also returns the flow direction value.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Update -          This simple function updates the pixel value with the directional code returned from the flow direction function
 
 Development Problems
