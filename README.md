@@ -38,6 +38,7 @@ Once run, the program will read the elevation raster dataset, in csv format. To 
 Functions
 --------------------
 The program includes x3 functions which can be found in the D8framework.py script. The functions include: Whichpix, Flowdirection and Update.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Whichpix -        Takes in the values of l and k and elev_copy dataset, along with list of neighboring pixels with values. Loops through the pixellist and finds the and                         calculates a droplist of the differences between neighboring pixel elevations and original pixel elevation. Next, finds the lowest drop value, the 
                   elevdeduct and notes the pixelid, returning both.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
